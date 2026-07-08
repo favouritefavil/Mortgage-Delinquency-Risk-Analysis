@@ -486,7 +486,7 @@ ORDER BY exposure DESC;
 
 
 /* Portfolio health — executive KPI summary row */
-DROP TABLE IF EXISTS mortgage_portfolio_kpi_summary;
+
 
 CREATE TABLE mortgage_portfolio_kpi_summary AS
 SELECT
@@ -533,7 +533,7 @@ FROM mortgage_typed_fe_v;
 
 
 /* Credit score risk — how does delinquency change across credit score bands? */
-DROP TABLE IF EXISTS mortgage_credit_score_summary;
+
 
 CREATE TABLE mortgage_credit_score_summary AS
 SELECT
@@ -556,7 +556,7 @@ ORDER BY
 
 
 /* LTV risk — at what leverage level does risk become material? */
-DROP TABLE IF EXISTS mortgage_ltv_summary;
+
 
 CREATE TABLE mortgage_ltv_summary AS
 SELECT
@@ -578,7 +578,7 @@ ORDER BY
 
 
 /* DTI risk — does repayment capacity influence delinquency? */
-DROP TABLE IF EXISTS mortgage_dti_summary;
+
 
 CREATE TABLE mortgage_dti_summary AS
 SELECT
@@ -600,7 +600,7 @@ ORDER BY
 
 
 /* Risk segmentation — does layering multiple risk factors compound delinquency? */
-DROP TABLE IF EXISTS mortgage_risk_segment_summary;
+
 
 CREATE TABLE mortgage_risk_segment_summary AS
 SELECT
@@ -621,7 +621,7 @@ ORDER BY
 
 
 /* Property type risk — which collateral types experience the highest delinquency? */
-DROP TABLE IF EXISTS mortgage_property_type_summary;
+
 
 CREATE TABLE mortgage_property_type_summary AS
 SELECT
@@ -636,7 +636,7 @@ ORDER BY delinquency_rate DESC;
 
 
 /* Occupancy risk — does borrower occupancy type affect delinquency behaviour? */
-DROP TABLE IF EXISTS mortgage_occupancy_summary;
+
 
 CREATE TABLE mortgage_occupancy_summary AS
 SELECT
@@ -651,7 +651,7 @@ ORDER BY delinquency_rate DESC;
 
 
 /* Loan purpose risk — are purchase loans riskier than refinance loans? */
-DROP TABLE IF EXISTS mortgage_loan_purpose_summary;
+
 
 CREATE TABLE mortgage_loan_purpose_summary AS
 SELECT
@@ -666,7 +666,7 @@ ORDER BY delinquency_rate DESC;
 
 
 /* Geographic risk — which states have the highest delinquency rates and exposure? */
-DROP TABLE IF EXISTS mortgage_state_risk_summary;
+
 
 CREATE TABLE mortgage_state_risk_summary AS
 SELECT
@@ -714,7 +714,7 @@ ORDER BY delinquency_rate DESC;
 
 
 /* Modification risk — are modified loans materially riskier than non-modified loans? */
-DROP TABLE IF EXISTS mortgage_modification_summary;
+
 
 CREATE TABLE mortgage_modification_summary AS
 SELECT
@@ -732,7 +732,7 @@ ORDER BY delinquency_rate DESC;
 
 
 /* Delinquency severity distribution — how severe are delinquency events? */
-DROP TABLE IF EXISTS mortgage_delinquency_distribution_summary;
+
 
 CREATE TABLE mortgage_delinquency_distribution_summary AS
 SELECT
@@ -744,7 +744,7 @@ ORDER BY delinquency_status;
 
 
 /* Zero balance analysis — why are loans leaving the portfolio? */
-DROP TABLE IF EXISTS mortgage_zero_balance_summary;
+
 
 CREATE TABLE mortgage_zero_balance_summary AS
 SELECT
@@ -758,7 +758,7 @@ ORDER BY loan_count DESC;
 
 
 /* Vintage analysis — do newer origination cohorts perform differently from older ones? */
-DROP TABLE IF EXISTS mortgage_vintage_summary;
+
 
 CREATE TABLE mortgage_vintage_summary AS
 SELECT
@@ -777,7 +777,7 @@ ORDER BY MIN(DATE_TRUNC('quarter', TO_DATE(origination_date, 'MMYYYY')));
 
 /* Modification exposure — does the elevated modification delinquency rate
    translate into a disproportionate concentration of delinquent exposure? */
-DROP TABLE IF EXISTS mortgage_modification_exposure_summary;
+
 
 CREATE TABLE mortgage_modification_exposure_summary AS
 SELECT
@@ -837,7 +837,7 @@ SELECT COUNT(*) AS rows FROM mortgage_modification_exposure_summary;
    current state of the portfolio.
    ============================================================ */
 
-DROP TABLE IF EXISTS mortgage_powerbi_fact;
+
 
 CREATE TABLE mortgage_powerbi_fact AS
 
