@@ -2,7 +2,7 @@
 
 **Reading Time: Approximately 4 minutes**
 
-Full detail lives in `01_Project_Documentation/`.
+Full detail lives in [Browse 01_Project_Documentation Folder](01_Project_Documentation/).
 
 ## Tools Used
 
@@ -56,11 +56,11 @@ Six-page Power BI dashboard: Executive Overview, Borrower Risk, Property & Loan,
 
 ## Repository Navigation
 
-Start with `README.md` for full detail, or `01_Project_Documentation/Executive_Credit_Risk_Report.docx` for the business-facing findings. Technical reviewers should go to `03_SQL/mortgage_risk_analysis.sql` and `01_Project_Documentation/Technical_Documentation.docx`.
+Start with [README.md](README.md) for full detail, or [Executive Credit Risk Report](01_Project_Documentation/Executive_Credit_Risk_Report.docx) for the business-facing findings. Technical reviewers should go to [SQL Query File](03_SQL/mortgage_risk_analysis.sql) and [Technical Documentation](01_Project_Documentation/Technical_Documentation.docx).
 
 ## Links
 
-Full reports: `01_Project_Documentation/`
+Full reports: [Browse 01_Project_Documentation Folder](01_Project_Documentation/)
 Portfolio: https://chegwefavourportfolioo.netlify.app/
 GitHub: https://github.com/favouritefavil
 LinkedIn: http://www.linkedin.com/in/favour-chegwe
