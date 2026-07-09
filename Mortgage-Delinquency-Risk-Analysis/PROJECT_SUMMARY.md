@@ -26,7 +26,7 @@ Fannie Mae Single-Family Loan Performance Dataset, 2020 Q1-Q2. 84.18 million loa
 
 ## Dashboard Preview
 
-Six-page Power BI dashboard: Executive Overview, Borrower Risk, Property & Loan, Geographic Risk, Behavioural Risk, Portfolio Surveillance. Screenshots in `02_Dashboard/`.
+Six-page Power BI dashboard: Executive Overview, Borrower Risk, Property & Loan, Geographic Risk, Behavioural Risk, Portfolio Surveillance. Screenshots in [02_Dashboard Folder](02_Dashboard/)
 
 ## Key Findings
 
@@ -61,6 +61,6 @@ Start with [README.md](README.md) for full detail, or [Executive Credit Risk Rep
 ## Links
 
 Full reports: [Browse 01_Project_Documentation Folder](01_Project_Documentation/)
-Portfolio: https://chegwefavourportfolioo.netlify.app/
-GitHub: https://github.com/favouritefavil
-LinkedIn: http://www.linkedin.com/in/favour-chegwe
+Portfolio: [Favour Chegwe](https://chegwefavourportfolioo.netlify.app/)
+GitHub: [Favouritefavil](https://github.com/favouritefavil)
+LinkedIn: [Favour Chegwe](http://www.linkedin.com/in/favour-chegwe)
