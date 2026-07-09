@@ -3,9 +3,9 @@
 Portfolio-grade credit risk analytics project using the Fannie Mae Single-Family Loan Performance Dataset (2020 Q1-Q2). Built to simulate how a Risk Analytics team inside a bank or mortgage institution would investigate portfolio delinquency, quantify exposure, and produce an operational monitoring framework.
 
 **Author:** Favour Chegwe
-**Portfolio:** https://chegwefavourportfolioo.netlify.app/
-**GitHub:** https://github.com/favouritefavil
-**LinkedIn:** http://www.linkedin.com/in/favour-chegwe
+**Portfolio:** [Favour Chegwe](https://chegwefavourportfolioo.netlify.app/)
+**GitHub:** [Favouritefavil](https://github.com/favouritefavil)
+**LinkedIn:** [Favour Chegwe](http://www.linkedin.com/in/favour-chegwe)
 
 ---
 
@@ -24,7 +24,7 @@ Given a large mortgage portfolio, which borrowers are most likely to become deli
 
 ## Business Value
 
-This project demonstrates how raw, unstructured mortgage servicing data — 84 million records with no schema, no documentation, and no analytical structure — can be transformed into decision-grade portfolio risk intelligence. The output is not just a dashboard; it is a repeatable framework an institution could use to prioritise which borrowers need attention, which segments are quietly accumulating exposure, and where a monitoring threshold should trigger action rather than a quarterly review. For a credit risk or portfolio management function, that distinction matters: knowing your overall delinquency rate is reporting, knowing which 5% of your book explains 40% of your exposure at risk is strategy. This project is built to demonstrate that second capability — turning data into a basis for decisions, not just a summary of what already happened.
+This project demonstrates how raw, unstructured mortgage servicing data, 84 million records with no schema, no documentation, and no analytical structure can be transformed into decision-grade portfolio risk intelligence. The output is not just a dashboard; it is a repeatable framework an institution could use to prioritise which borrowers need attention, which segments are quietly accumulating exposure, and where a monitoring threshold should trigger action rather than a quarterly review. For a credit risk or portfolio management function, that distinction matters: knowing your overall delinquency rate is reporting, knowing which 5% of your book explains 40% of your exposure at risk is strategy. This project is built to demonstrate that second capability turning data into a basis for decisions, not just a summary of what already happened.
 
 ## Dataset
 
@@ -34,13 +34,13 @@ This project demonstrates how raw, unstructured mortgage servicing data — 84 m
 - **Reporting layer:** ~1.92 million unique loans (latest-snapshot model, one row per loan)
 - **Fields:** 108 columns per record, no header row, mapped against the official Fannie Mae glossary
 
-Full column mapping and glossary notes are in `04_Data/`.
+Full column mapping and glossary notes are in [04_Data/ Folder](04_Data/)
 
 ## Solution Architecture
 
 Raw pipe-delimited files are loaded into PostgreSQL as TEXT to guarantee safe ingestion, then progressively cleaned, typed, and enriched through a sequence of views. Feature engineering derives risk bands and composite risk segments. Thirteen summary tables sit on top of the full 84M-row analytical panel to keep EDA fast. A separate latest-snapshot fact table (~1.92M rows, one record per loan) is built specifically for Power BI so the dashboard reports current portfolio state rather than cumulative historical exposure.
 
-See `05_Diagrams/Solution_Architecture.png` and `05_Diagrams/Snapshot_Model_Architecture.png` for the full pipeline and the reasoning behind the snapshot approach.
+See [Solution Architecture Diagram](05_Diagrams/Solution_Architecture.png) and [Snapshot Model Architecture Diagram](05_Diagrams/Snapshot_Model_Architecture.png) for the full pipeline and the reasoning behind the snapshot approach.
 
 ## Analytical Methodology
 
@@ -56,7 +56,7 @@ Risk features engineered directly in SQL:
 | Delinquency Flag | Status not equal to 00 |
 | Serious Delinquency Flag | Status 03+ (90+ DPD, IFRS 9 Stage 3 equivalent) |
 
-Full SQL is in `03_SQL/mortgage_risk_analysis.sql`, structured across eight stages from raw table creation to the Power BI fact table.
+Full SQL is in [mortgage_risk_analysis.sql](03_SQL/mortgage_risk_analysis.sql), structured across eight stages from raw table creation to the Power BI fact table.
 
 ## Dashboard
 
@@ -71,7 +71,7 @@ Six-page Power BI dashboard, each page built around one executive question:
 | 5. Behavioural Risk | How does modification status affect delinquency? |
 | 6. Portfolio Surveillance | Which segments need continuous monitoring? |
 
-Screenshots: `02_Dashboard/Dashboard_Page_1.png` through `Dashboard_Page_6.png`.
+Screenshots: [Executive Overview](02_Dashboard/Dashboard_Page_1.png) through [Deep-Dive Details](02_Dashboard/Dashboard_Page_6.png)
 
 ## Key Findings
 
@@ -152,17 +152,17 @@ This project demonstrates the complete analytical value chain a credit risk or d
 
 Recommended reading order for first-time visitors:
 
-1. `01_Project_Documentation/Project_Summary.pdf` — five-minute overview
-2. `01_Project_Documentation/Executive_Credit_Risk_Report.pdf` — findings and recommendations for a business audience
-3. `01_Project_Documentation/Portfolio_Publication.pdf` — polished, presentation-ready version of the full case study
-4. `01_Project_Documentation/Business_Case_Study.pdf` — full narrative of the business problem, methodology, and impact
-5. `01_Project_Documentation/Technical_Documentation.pdf` — detailed technical walkthrough for reviewers assessing execution
-6. `02_Dashboard/` — six-page Power BI dashboard screenshots
-7. `03_SQL/mortgage_risk_analysis.sql` — full analytical pipeline, raw data to reporting layer
+1. [Project Summary](01_Project_Documentation/Project_Summary.pdf)— five-minute overview
+2. [Executive Credit Risk Report](01_Project_Documentation/Executive_Credit_Risk_Report.pdf) — findings and recommendations for a business audience
+3. [Portfolio Publication](01_Project_Documentation/Portfolio_Publication.pdf) — polished, presentation-ready version of the full case study
+4. [Business Case Study](01_Project_Documentation/Business_Case_Study.pdf) — full narrative of the business problem, methodology, and impact
+5. [Technical Documentation](01_Project_Documentation/Technical_Documentation.pdf) — detailed technical walkthrough for reviewers assessing execution
+6. [Browse 02_Dashboard/ Folder](02_Dashboard/) — six-page Power BI dashboard screenshots
+7. [mortgage_risk_analysis.sql](03_SQL/mortgage_risk_analysis.sql) — full analytical pipeline, raw data to reporting layer
 
 ## Connect
 
 Favour Chegwe
-Portfolio: https://chegwefavourportfolioo.netlify.app/
-GitHub: https://github.com/favouritefavil
-LinkedIn: http://www.linkedin.com/in/favour-chegwe
+Portfolio:  [Favour Chegwe](https://chegwefavourportfolioo.netlify.app/)
+GitHub:[Favouritefavil](https://github.com/favouritefavil)
+LinkedI [Favour Chegwe](http://www.linkedin.com/in/favour-chegwe)
